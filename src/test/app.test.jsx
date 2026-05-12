@@ -31,3 +31,8 @@ test('renders experience, skills, and contact content', () => {
     'mailto:oceanzhang1994@gmail.com',
   );
 });
+
+test('applies reveal animations across content sections', () => {
+  const { container } = render(<App />);
+  expect(container.querySelectorAll('[data-reveal]').length).toBeGreaterThan(10);
+});

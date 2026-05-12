@@ -10,3 +10,7 @@
   flex-wrap: wrap;
   gap: 14px;
 }
+
+.item {
+  list-style: none;
+}
