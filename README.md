@@ -1,6 +1,10 @@
-# Haiyang Website
+# Haiyang Personal Website
 
-Experimental one-page personal website for GitHub Pages.
+This repository contains my personal website. It is a one-page site built with React and Vite, and it is deployed with GitHub Pages.
+
+## Online
+
+Website: https://haiyangzhang-1994.github.io/
 
 ## Scripts
 
@@ -11,5 +15,4 @@ Experimental one-page personal website for GitHub Pages.
 
 ## Deployment
 
-This project deploys with GitHub Actions to GitHub Pages.
-If the repository name changes, update `base` in `vite.config.js`.
+This project is deployed to GitHub Pages through GitHub Actions.
