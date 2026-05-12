@@ -44,11 +44,16 @@
   color: var(--text-dim);
 }
 
-.actions {
+.signals {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
   margin-top: 24px;
+  padding: 0;
+}
+
+.signalItem {
+  list-style: none;
 }
 
 .avatarShell {

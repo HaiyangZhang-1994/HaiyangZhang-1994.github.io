@@ -2,9 +2,9 @@ import { expect, test } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import App from '../App';
 
-test('renders the primary resume CTA', () => {
+test('renders the footer resume CTA', () => {
   render(<App />);
-  expect(screen.getByRole('link', { name: /download resume/i })).toBeInTheDocument();
+  expect(screen.getByRole('link', { name: /resume pdf/i })).toBeInTheDocument();
 });
 
 test('renders the experience heading', () => {
@@ -20,6 +20,9 @@ test('renders hero identity and signal strip', () => {
     '/Haiyang-Website/avatar.jpg',
   );
   expect(screen.getAllByText(/react/i).length).toBeGreaterThan(0);
+  expect(screen.getByText(/web3/i)).toBeInTheDocument();
+  expect(screen.getByText(/blockchain/i)).toBeInTheDocument();
+  expect(screen.queryByRole('link', { name: /download resume/i })).not.toBeInTheDocument();
 });
 
 test('renders experience, skills, and contact content', () => {

@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { siteContent } from '../data/siteContent';
-import { GlowButton } from '../components/GlowButton';
+import { Reveal } from '../components/Reveal';
+import { SignalPill } from '../components/SignalPill';
 import { BackgroundCanvas } from '../components/BackgroundCanvas';
 import styles from './HeroSection.module.css';
 
@@ -36,12 +37,19 @@ export function HeroSection() {
           >
             {hero.tagline}
           </motion.p>
-          <div className={styles.actions}>
-            <GlowButton href={hero.primaryCta.href}>{hero.primaryCta.label}</GlowButton>
-            <GlowButton href={hero.secondaryCta.href} variant="secondary">
-              {hero.secondaryCta.label}
-            </GlowButton>
-          </div>
+          <ul className={styles.signals} aria-label="Professional signals">
+            {siteContent.identitySignals.map((signal, index) => (
+              <Reveal
+                as="li"
+                key={signal}
+                className={styles.signalItem}
+                direction={index % 2 === 0 ? 'right' : 'left'}
+                delay={0.28 + index * 0.04}
+              >
+                <SignalPill label={signal} />
+              </Reveal>
+            ))}
+          </ul>
         </div>
         <motion.div
           className={styles.avatarShell}
