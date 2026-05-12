@@ -17,7 +17,7 @@ test('renders hero identity and signal strip', () => {
   expect(screen.getByText(/haiyang zhang/i)).toBeInTheDocument();
   expect(screen.getByRole('img', { name: /haiyang zhang portrait/i })).toHaveAttribute(
     'src',
-    '/Haiyang-Website/avatar.jpg',
+    '/avatar.jpg',
   );
   expect(screen.getAllByText(/react/i).length).toBeGreaterThan(0);
   expect(screen.getByText(/web3/i)).toBeInTheDocument();
