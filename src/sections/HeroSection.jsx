@@ -12,9 +12,6 @@ export function HeroSection() {
       <BackgroundCanvas />
       <div className={styles.inner}>
         <div className={styles.copy}>
-          <motion.p initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} className={styles.kicker}>
-            Future-tech portfolio
-          </motion.p>
           <motion.h1
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
