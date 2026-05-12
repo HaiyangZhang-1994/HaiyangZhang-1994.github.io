@@ -1,10 +1,20 @@
 # Haiyang Personal Website
 
-This repository contains my personal website. It is a one-page site built with React and Vite, and it is deployed with GitHub Pages.
+This repository contains my personal website and portfolio.
 
 ## Online
 
 Website: https://haiyangzhang-1994.github.io/
+
+## About
+
+This website is a place to present who I am, what I build, and how to get in touch with me. It includes my personal introduction, selected projects, technical background, and contact information.
+
+## Tech Stack
+
+- React
+- Vite
+- GitHub Pages
 
 ## Scripts
 
