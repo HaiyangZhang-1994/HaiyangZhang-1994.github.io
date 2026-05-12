@@ -1,5 +1,7 @@
+import { AppShell } from './app/AppShell';
+
 function App() {
-  return <a href="/resume.pdf">Download Resume</a>;
+  return <AppShell />;
 }
 
 export default App;

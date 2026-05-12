@@ -6,3 +6,8 @@ test('renders the primary resume CTA', () => {
   render(<App />);
   expect(screen.getByRole('link', { name: /download resume/i })).toBeInTheDocument();
 });
+
+test('renders the experience heading', () => {
+  render(<App />);
+  expect(screen.getByText(/selected experience/i)).toBeInTheDocument();
+});

@@ -1,0 +1,16 @@
+:root {
+  --bg: #050816;
+  --bg-elevated: rgba(10, 17, 34, 0.72);
+  --surface: rgba(9, 18, 39, 0.58);
+  --surface-strong: rgba(10, 18, 38, 0.88);
+  --text: #eaf2ff;
+  --text-dim: rgba(234, 242, 255, 0.72);
+  --accent: #5be7ff;
+  --accent-strong: #3bcbff;
+  --accent-soft: rgba(91, 231, 255, 0.18);
+  --border: rgba(255, 255, 255, 0.12);
+  --shadow: 0 20px 80px rgba(0, 0, 0, 0.4);
+  --radius-lg: 28px;
+  --radius-md: 18px;
+  --page-max: 1200px;
+}
