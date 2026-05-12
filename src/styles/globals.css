@@ -27,3 +27,25 @@ a {
 #root {
   min-height: 100vh;
 }
+
+@media (max-width: 720px) {
+  body {
+    background:
+      radial-gradient(circle at top, rgba(59, 203, 255, 0.12), transparent 24%),
+      linear-gradient(180deg, #07101f 0%, #050816 55%, #040612 100%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

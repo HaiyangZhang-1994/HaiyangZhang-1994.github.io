@@ -26,3 +26,21 @@
   bottom: 12%;
   background: rgba(122, 92, 255, 0.12);
 }
+
+.scanline {
+  position: absolute;
+  inset: -20% 0 auto;
+  height: 40%;
+  background: linear-gradient(180deg, transparent, rgba(91, 231, 255, 0.12), transparent);
+  animation: sweep 10s linear infinite;
+}
+
+@keyframes sweep {
+  from {
+    transform: translateY(-10%);
+  }
+
+  to {
+    transform: translateY(220%);
+  }
+}

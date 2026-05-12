@@ -42,3 +42,14 @@
   flex-wrap: wrap;
   margin-top: 24px;
 }
+
+@media (max-width: 720px) {
+  .hero {
+    min-height: 86vh;
+    padding: 88px 20px 48px;
+  }
+
+  .title {
+    font-size: 3.75rem;
+  }
+}
