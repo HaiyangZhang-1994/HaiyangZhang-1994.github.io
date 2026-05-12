@@ -1,7 +1,11 @@
 .pill {
-  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
   padding: 14px 18px;
   border-radius: 999px;
   border: 1px solid var(--border);
   background: rgba(255, 255, 255, 0.03);
+  line-height: 1.2;
+  white-space: nowrap;
 }

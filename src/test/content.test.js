@@ -4,7 +4,7 @@ import { siteContent } from '../data/siteContent';
 describe('siteContent', () => {
   test('includes the five required homepage sections', () => {
     expect(siteContent.hero.name).toBeTruthy();
-    expect(siteContent.identitySignals).toHaveLength(7);
+    expect(siteContent.identitySignals).toHaveLength(8);
     expect(siteContent.experienceChapters).toHaveLength(3);
     expect(siteContent.skillGroups).toHaveLength(4);
     expect(siteContent.contact.resumeHref).toBe('/Haiyang-Website/resume.pdf');
