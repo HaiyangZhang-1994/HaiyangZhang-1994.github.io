@@ -1,3 +1,5 @@
+const publicAsset = (fileName) => `${import.meta.env.BASE_URL}${fileName}`;
+
 export const siteContent = {
   hero: {
     name: 'Haiyang Zhang',
@@ -5,7 +7,8 @@ export const siteContent = {
     tagline: 'Crafting complex systems into elegant, high-performance product experiences.',
     blurb:
       'Frontend engineer with 8 years of experience across enterprise workflow platforms, healthcare apps, and performance-driven product systems.',
-    primaryCta: { label: 'Download Resume', href: '/resume.pdf' },
+    avatar: { src: publicAsset('avatar.jpg'), alt: 'Haiyang Zhang portrait' },
+    primaryCta: { label: 'Download Resume', href: publicAsset('resume.pdf') },
     secondaryCta: {
       label: 'LinkedIn',
       href: 'https://www.linkedin.com/in/haiyang-zhang-122687135/',
@@ -77,6 +80,6 @@ export const siteContent = {
   contact: {
     email: 'oceanzhang1994@gmail.com',
     linkedin: 'https://www.linkedin.com/in/haiyang-zhang-122687135/',
-    resumeHref: '/resume.pdf',
+    resumeHref: publicAsset('resume.pdf'),
   },
 };
