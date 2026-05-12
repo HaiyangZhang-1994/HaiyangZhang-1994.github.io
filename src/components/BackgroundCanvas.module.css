@@ -1,0 +1,28 @@
+.background {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.glowA,
+.glowB {
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(60px);
+}
+
+.glowA {
+  width: 420px;
+  height: 420px;
+  top: 10%;
+  left: -8%;
+  background: rgba(91, 231, 255, 0.14);
+}
+
+.glowB {
+  width: 340px;
+  height: 340px;
+  right: 4%;
+  bottom: 12%;
+  background: rgba(122, 92, 255, 0.12);
+}

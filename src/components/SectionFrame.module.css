@@ -1,0 +1,26 @@
+.section {
+  position: relative;
+  padding: 88px 24px;
+}
+
+.inner {
+  width: min(100%, var(--page-max));
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 28px;
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--accent);
+  font-size: 12px;
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 3.75rem);
+}

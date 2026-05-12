@@ -1,0 +1,28 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 22px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    border-color 180ms ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+.primary {
+  background: linear-gradient(135deg, rgba(91, 231, 255, 0.22), rgba(59, 203, 255, 0.08));
+  box-shadow:
+    0 0 0 1px rgba(91, 231, 255, 0.16),
+    0 12px 36px rgba(59, 203, 255, 0.18);
+}
+
+.secondary {
+  background: rgba(255, 255, 255, 0.02);
+}

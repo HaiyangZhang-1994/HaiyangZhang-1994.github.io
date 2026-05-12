@@ -1,0 +1,12 @@
+.section {
+  padding: 0 24px 48px;
+}
+
+.list {
+  width: min(100%, var(--page-max));
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
