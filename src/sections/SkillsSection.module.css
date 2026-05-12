@@ -1,0 +1,15 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.card {
+  padding: 24px;
+  border-radius: var(--radius-md);
+}
+
+.card ul {
+  padding-left: 18px;
+  color: var(--text-dim);
+}

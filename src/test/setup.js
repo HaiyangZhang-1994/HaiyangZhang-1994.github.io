@@ -5,3 +5,13 @@ import { afterEach } from 'vitest';
 afterEach(() => {
   cleanup();
 });
+
+class MockIntersectionObserver {
+  observe() {}
+
+  unobserve() {}
+
+  disconnect() {}
+}
+
+globalThis.IntersectionObserver = MockIntersectionObserver;

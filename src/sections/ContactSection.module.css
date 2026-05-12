@@ -1,0 +1,16 @@
+.panel {
+  padding: 32px;
+  border-radius: var(--radius-lg);
+}
+
+.copy {
+  max-width: 720px;
+  color: var(--text-dim);
+}
+
+.actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}

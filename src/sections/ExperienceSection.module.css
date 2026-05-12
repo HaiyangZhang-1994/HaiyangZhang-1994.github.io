@@ -1,0 +1,35 @@
+.grid {
+  display: grid;
+  gap: 20px;
+}
+
+.card {
+  padding: 28px;
+  border-radius: var(--radius-lg);
+}
+
+.period {
+  color: var(--accent);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.summary {
+  color: var(--text-dim);
+}
+
+.highlights {
+  padding-left: 18px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tags span {
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+}

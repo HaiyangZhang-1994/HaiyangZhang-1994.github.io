@@ -17,3 +17,13 @@ test('renders hero identity and signal strip', () => {
   expect(screen.getByText(/haiyang zhang/i)).toBeInTheDocument();
   expect(screen.getAllByText(/react/i).length).toBeGreaterThan(0);
 });
+
+test('renders experience, skills, and contact content', () => {
+  render(<App />);
+  expect(screen.getByText(/distributed privacy computing data service platform/i)).toBeInTheDocument();
+  expect(screen.getByText(/performance & architecture/i)).toBeInTheDocument();
+  expect(screen.getByRole('link', { name: /email me/i })).toHaveAttribute(
+    'href',
+    'mailto:oceanzhang1994@gmail.com',
+  );
+});
