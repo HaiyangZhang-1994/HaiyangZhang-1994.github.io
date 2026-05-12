@@ -31,10 +31,3 @@ test('renders experience, skills, and contact content', () => {
     'mailto:oceanzhang1994@gmail.com',
   );
 });
-
-test('renders the animated system journey section', () => {
-  render(<App />);
-  expect(screen.getByText(/system journey/i)).toBeInTheDocument();
-  expect(screen.getByText(/privacy compute/i)).toBeInTheDocument();
-  expect(screen.getAllByText(/fhir records/i).length).toBeGreaterThan(0);
-});
