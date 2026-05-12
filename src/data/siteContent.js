@@ -20,6 +20,8 @@ export const siteContent = {
     'Enterprise Systems',
     'Healthcare + FHIR',
     'React / Vue / RN',
+    'Web3',
+    'Blockchain',
   ],
   experienceChapters: [
     {
