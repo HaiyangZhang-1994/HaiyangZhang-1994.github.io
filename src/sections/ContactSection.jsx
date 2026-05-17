@@ -9,8 +9,8 @@ export function ContactSection() {
     <SectionFrame eyebrow="Connection" title="Get in Touch" id="contact">
       <Reveal className={`${styles.panel} glass-surface`} direction="none">
         <p className={styles.copy}>
-          Building product experiences across enterprise systems, healthcare workflows, and high-complexity front-end
-          platforms.
+          Building product experiences across enterprise systems, healthcare workflows, and modern full-stack web
+          products.
         </p>
         <div className={styles.actions}>
           <Reveal direction="up" delay={0.08}>

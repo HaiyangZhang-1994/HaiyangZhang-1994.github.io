@@ -20,15 +20,15 @@ test('renders hero identity and signal strip', () => {
     '/avatar.jpg',
   );
   expect(screen.getAllByText(/react/i).length).toBeGreaterThan(0);
-  expect(screen.getByText(/web3/i)).toBeInTheDocument();
-  expect(screen.getByText(/blockchain/i)).toBeInTheDocument();
+  expect(screen.getByText(/next\.js \/ fastapi/i)).toBeInTheDocument();
+  expect(screen.getByText(/cloud deployment/i)).toBeInTheDocument();
   expect(screen.queryByRole('link', { name: /download resume/i })).not.toBeInTheDocument();
 });
 
 test('renders experience, skills, and contact content', () => {
   render(<App />);
-  expect(screen.getByText(/distributed privacy computing data service platform/i)).toBeInTheDocument();
-  expect(screen.getByText(/performance & architecture/i)).toBeInTheDocument();
+  expect(screen.getByText(/privacy computing platform modernization/i)).toBeInTheDocument();
+  expect(screen.getByText(/backend, cloud & data/i)).toBeInTheDocument();
   expect(screen.getByRole('link', { name: /email me/i })).toHaveAttribute(
     'href',
     'mailto:oceanzhang1994@gmail.com',
