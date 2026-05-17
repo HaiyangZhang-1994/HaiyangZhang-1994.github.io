@@ -14,12 +14,22 @@
   text-transform: uppercase;
 }
 
+.subtitle {
+  margin-top: -2px;
+  color: var(--text-dim);
+}
+
 .summary {
   color: var(--text-dim);
 }
 
 .highlights {
   padding-left: 18px;
+  color: var(--text-dim);
+}
+
+.highlights li + li {
+  margin-top: 10px;
 }
 
 .tags {

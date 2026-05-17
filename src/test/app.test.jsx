@@ -12,6 +12,15 @@ test('renders the experience heading', () => {
   expect(screen.getByText(/selected experience/i)).toBeInTheDocument();
 });
 
+test('renders summary, deep skills, and education sections', () => {
+  render(<App />);
+  expect(screen.getByText(/professional summary/i)).toBeInTheDocument();
+  expect(screen.getByText(/core technical stack/i)).toBeInTheDocument();
+  expect(screen.getByText(/education/i)).toBeInTheDocument();
+  expect(screen.getByText(/testing & quality/i)).toBeInTheDocument();
+  expect(screen.getByText(/syracuse university/i)).toBeInTheDocument();
+});
+
 test('renders hero identity and signal strip', () => {
   render(<App />);
   expect(screen.getByText(/haiyang zhang/i)).toBeInTheDocument();
@@ -28,7 +37,8 @@ test('renders hero identity and signal strip', () => {
 test('renders experience, skills, and contact content', () => {
   render(<App />);
   expect(screen.getByText(/privacy computing platform modernization/i)).toBeInTheDocument();
-  expect(screen.getByText(/backend, cloud & data/i)).toBeInTheDocument();
+  expect(screen.getByText(/backend & integration/i)).toBeInTheDocument();
+  expect(screen.getAllByText(/google cloud platform/i).length).toBeGreaterThan(0);
   expect(screen.getByRole('link', { name: /email me/i })).toHaveAttribute(
     'href',
     'mailto:oceanzhang1994@gmail.com',

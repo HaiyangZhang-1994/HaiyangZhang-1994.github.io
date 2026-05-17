@@ -1,6 +1,6 @@
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 18px;
 }
 
@@ -9,7 +9,12 @@
   border-radius: var(--radius-md);
 }
 
-.card ul {
+.list {
+  margin: 0;
   padding-left: 18px;
   color: var(--text-dim);
+}
+
+.list li + li {
+  margin-top: 8px;
 }

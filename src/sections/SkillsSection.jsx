@@ -5,7 +5,7 @@ import styles from './SkillsSection.module.css';
 
 export function SkillsSection() {
   return (
-    <SectionFrame eyebrow="Technical Depth" title="Skills Constellation" id="skills">
+    <SectionFrame eyebrow="Technical Depth" title="Core Technical Stack" id="skills">
       <div className={styles.grid}>
         {siteContent.skillGroups.map((group, index) => (
           <Reveal
@@ -16,7 +16,7 @@ export function SkillsSection() {
             delay={index * 0.06}
           >
             <h3>{group.title}</h3>
-            <ul>
+            <ul className={styles.list}>
               {group.items.map((item) => (
                 <li key={item}>{item}</li>
               ))}

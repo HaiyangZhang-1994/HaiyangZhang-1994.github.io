@@ -37,6 +37,14 @@ export function HeroSection() {
           >
             {hero.tagline}
           </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+            className={styles.detail}
+          >
+            {hero.blurb}
+          </motion.p>
           <ul className={styles.signals} aria-label="Professional signals">
             {siteContent.identitySignals.map((signal, index) => (
               <Reveal

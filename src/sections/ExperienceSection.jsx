@@ -17,6 +17,7 @@ export function ExperienceSection() {
           >
             <p className={styles.period}>{chapter.period}</p>
             <h3>{chapter.title}</h3>
+            {chapter.subtitle ? <p className={styles.subtitle}>{chapter.subtitle}</p> : null}
             <p className={styles.summary}>{chapter.summary}</p>
             <ul className={styles.highlights}>
               {chapter.highlights.map((item) => (
