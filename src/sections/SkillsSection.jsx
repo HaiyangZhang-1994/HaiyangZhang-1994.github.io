@@ -5,7 +5,7 @@ import styles from './SkillsSection.module.css';
 
 export function SkillsSection() {
   return (
-    <SectionFrame eyebrow="Technical Depth" title="Core Technical Stack" id="skills">
+    <SectionFrame eyebrow="Technical Depth" title="Technical Stack" id="skills">
       <div className={styles.grid}>
         {siteContent.skillGroups.map((group, index) => (
           <Reveal

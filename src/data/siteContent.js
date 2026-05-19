@@ -71,6 +71,10 @@ export const siteContent = {
       subtitle: 'Personal Project · Creator / Full-Stack Engineer',
       title: 'Birding Copilot',
       period: '2026 - Present',
+      projectLink: {
+        label: 'Visit Project',
+        href: 'https://birdingcopilot.com/',
+      },
       summary:
         'Created a bird-finding web application that turns structured search into recommendation-first result pages backed by real eBird data, pairing a Next.js front end with a FastAPI service layer.',
       highlights: [

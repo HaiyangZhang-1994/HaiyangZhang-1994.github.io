@@ -9,13 +9,13 @@ test('renders the footer resume CTA', () => {
 
 test('renders the experience heading', () => {
   render(<App />);
-  expect(screen.getByText(/selected experience/i)).toBeInTheDocument();
+  expect(screen.getByText(/^experience$/i)).toBeInTheDocument();
 });
 
 test('renders summary, deep skills, and education sections', () => {
   render(<App />);
-  expect(screen.getByText(/professional summary/i)).toBeInTheDocument();
-  expect(screen.getByText(/core technical stack/i)).toBeInTheDocument();
+  expect(screen.getByText(/^summary$/i)).toBeInTheDocument();
+  expect(screen.getByText(/technical stack/i)).toBeInTheDocument();
   expect(screen.getByText(/education/i)).toBeInTheDocument();
   expect(screen.getByText(/testing & quality/i)).toBeInTheDocument();
   expect(screen.getByText(/syracuse university/i)).toBeInTheDocument();
@@ -39,6 +39,11 @@ test('renders experience, skills, and contact content', () => {
   expect(screen.getByText(/privacy computing platform modernization/i)).toBeInTheDocument();
   expect(screen.getByText(/backend & integration/i)).toBeInTheDocument();
   expect(screen.getAllByText(/google cloud platform/i).length).toBeGreaterThan(0);
+  expect(screen.getByRole('link', { name: /visit project/i })).toHaveAttribute(
+    'href',
+    'https://birdingcopilot.com/',
+  );
+  expect(screen.getByRole('link', { name: /visit project/i })).toHaveAttribute('target', '_blank');
   expect(screen.getByRole('link', { name: /email me/i })).toHaveAttribute(
     'href',
     'mailto:oceanzhang1994@gmail.com',

@@ -5,7 +5,7 @@ import styles from './SummarySection.module.css';
 
 export function SummarySection() {
   return (
-    <SectionFrame eyebrow="Snapshot" title="Professional Summary" id="summary">
+    <SectionFrame eyebrow="Snapshot" title="Summary" id="summary">
       <div className={styles.grid}>
         <Reveal className={`${styles.panel} glass-surface`} direction="right">
           {siteContent.summaryParagraphs.map((paragraph) => (

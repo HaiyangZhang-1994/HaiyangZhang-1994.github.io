@@ -5,7 +5,7 @@ import styles from './ExperienceSection.module.css';
 
 export function ExperienceSection() {
   return (
-    <SectionFrame eyebrow="Career Narrative" title="Selected Experience" id="experience">
+    <SectionFrame eyebrow="Career Narrative" title="Experience" id="experience">
       <div className={styles.grid}>
         {siteContent.experienceChapters.map((chapter, index) => (
           <Reveal
@@ -29,6 +29,16 @@ export function ExperienceSection() {
                 <span key={item}>{item}</span>
               ))}
             </div>
+            {chapter.projectLink ? (
+              <a
+                className={styles.projectLink}
+                href={chapter.projectLink.href}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {chapter.projectLink.label}
+              </a>
+            ) : null}
           </Reveal>
         ))}
       </div>

@@ -43,3 +43,15 @@
   border-radius: 999px;
   border: 1px solid var(--border);
 }
+
+.projectLink {
+  display: inline-flex;
+  margin-top: 18px;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.projectLink:hover {
+  text-decoration: underline;
+}
