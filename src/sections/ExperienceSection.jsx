@@ -16,7 +16,19 @@ export function ExperienceSection() {
             delay={index * 0.08}
           >
             <p className={styles.period}>{chapter.period}</p>
-            <h3>{chapter.title}</h3>
+            <div className={styles.headerRow}>
+              <h3>{chapter.title}</h3>
+              {chapter.projectLink ? (
+                <a
+                  className={styles.projectLink}
+                  href={chapter.projectLink.href}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {chapter.projectLink.label}
+                </a>
+              ) : null}
+            </div>
             {chapter.subtitle ? <p className={styles.subtitle}>{chapter.subtitle}</p> : null}
             <p className={styles.summary}>{chapter.summary}</p>
             <ul className={styles.highlights}>
@@ -29,16 +41,6 @@ export function ExperienceSection() {
                 <span key={item}>{item}</span>
               ))}
             </div>
-            {chapter.projectLink ? (
-              <a
-                className={styles.projectLink}
-                href={chapter.projectLink.href}
-                target="_blank"
-                rel="noreferrer"
-              >
-                {chapter.projectLink.label}
-              </a>
-            ) : null}
           </Reveal>
         ))}
       </div>

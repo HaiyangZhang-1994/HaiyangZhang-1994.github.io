@@ -1,5 +1,5 @@
 import { expect, test } from 'vitest';
-import { render, screen } from '@testing-library/react';
+import { render, screen, within } from '@testing-library/react';
 import App from '../App';
 
 test('renders the footer resume CTA', () => {
@@ -48,6 +48,18 @@ test('renders experience, skills, and contact content', () => {
     'href',
     'mailto:oceanzhang1994@gmail.com',
   );
+});
+
+test('places the Birding Copilot project link near the top of the card', () => {
+  render(<App />);
+  const article = screen.getByText(/birding copilot/i).closest('article');
+  expect(article).not.toBeNull();
+
+  const scoped = within(article);
+  const projectLink = scoped.getByRole('link', { name: /visit project/i });
+  const summary = scoped.getByText(/created a bird-finding web application/i);
+
+  expect(projectLink.compareDocumentPosition(summary) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
 });
 
 test('applies reveal animations across content sections', () => {

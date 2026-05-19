@@ -14,6 +14,18 @@
   text-transform: uppercase;
 }
 
+.headerRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.headerRow h3 {
+  margin: 0;
+}
+
 .subtitle {
   margin-top: -2px;
   color: var(--text-dim);
@@ -46,12 +58,33 @@
 
 .projectLink {
   display: inline-flex;
-  margin-top: 18px;
-  color: var(--accent);
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(91, 231, 255, 0.34);
+  background: linear-gradient(145deg, rgba(91, 231, 255, 0.16), rgba(122, 92, 255, 0.08));
+  box-shadow: 0 12px 32px rgba(59, 203, 255, 0.12);
+  color: var(--text);
   text-decoration: none;
   font-weight: 600;
+  white-space: nowrap;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    border-color 180ms ease;
 }
 
 .projectLink:hover {
-  text-decoration: underline;
+  transform: translateY(-1px);
+  border-color: rgba(91, 231, 255, 0.52);
+  box-shadow: 0 16px 36px rgba(59, 203, 255, 0.18);
+  text-decoration: none;
+}
+
+@media (max-width: 640px) {
+  .projectLink {
+    width: 100%;
+  }
 }
