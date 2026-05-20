@@ -17,6 +17,8 @@ test('renders summary, deep skills, and education sections', () => {
   expect(screen.getByText(/^summary$/i)).toBeInTheDocument();
   expect(screen.getByText(/technical stack/i)).toBeInTheDocument();
   expect(screen.getByText(/education/i)).toBeInTheDocument();
+  expect(screen.getByText(/ai & automation/i)).toBeInTheDocument();
+  expect(screen.getByText(/collaboration/i)).toBeInTheDocument();
   expect(screen.getByText(/testing & quality/i)).toBeInTheDocument();
   expect(screen.getByText(/syracuse university/i)).toBeInTheDocument();
 });
@@ -38,6 +40,9 @@ test('renders experience, skills, and contact content', () => {
   render(<App />);
   expect(screen.getByText(/privacy computing platform modernization/i)).toBeInTheDocument();
   expect(screen.getByText(/backend & integration/i)).toBeInTheDocument();
+  expect(screen.getAllByText(/python/i).length).toBeGreaterThan(0);
+  expect(screen.getByText(/tailwind css/i)).toBeInTheDocument();
+  expect(screen.getByText(/langgraph/i)).toBeInTheDocument();
   expect(screen.getAllByText(/google cloud platform/i).length).toBeGreaterThan(0);
   expect(screen.getByRole('link', { name: /visit project/i })).toHaveAttribute(
     'href',

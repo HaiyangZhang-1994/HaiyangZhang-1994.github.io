@@ -90,15 +90,47 @@ export const siteContent = {
   skillGroups: [
     {
       title: 'Languages',
-      items: ['HTML', 'CSS', 'JavaScript', 'TypeScript'],
+      items: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'Python'],
     },
     {
       title: 'Frontend & Mobile',
-      items: ['Vue.js', 'React', 'Next.js', 'React Native', 'Expo', 'Responsive Web Applications'],
+      items: [
+        'Vue.js',
+        'Nuxt',
+        'Vue Router',
+        'React',
+        'Next.js',
+        'React Router',
+        'React Native',
+        'Expo',
+        'Responsive Web Applications',
+        'Cross-Platform iOS/Android Development',
+      ],
+    },
+    {
+      title: 'Backend & Integration',
+      items: [
+        'Node.js',
+        'Express.js',
+        'Python',
+        'FastAPI',
+        'REST API Integration',
+        'GraphQL',
+        'PostgreSQL',
+        'Supabase',
+        'SQLAlchemy',
+        'Prisma',
+        'Auth.js',
+        'Axios',
+      ],
+    },
+    {
+      title: 'AI & Automation',
+      items: ['LangGraph', 'AI Agent Workflows'],
     },
     {
       title: 'State Management',
-      items: ['Vuex', 'Pinia', 'Zustand'],
+      items: ['Vuex', 'Pinia', 'Redux', 'Zustand'],
     },
     {
       title: 'Testing & Quality',
@@ -106,19 +138,31 @@ export const siteContent = {
     },
     {
       title: 'Tooling',
-      items: ['Webpack', 'Vite', 'Docker Compose', 'Nginx'],
+      items: ['Webpack', 'Vite', 'Tailwind CSS', 'Sass / SCSS', 'Docker Compose', 'Nginx'],
     },
     {
       title: 'DevOps & Cloud',
-      items: ['Docker', 'Kubernetes', 'CI/CD', 'Google Cloud Platform', 'AWS', 'Azure'],
+      items: ['Docker', 'Kubernetes', 'CI/CD', 'Google Cloud Platform', 'AWS', 'Microsoft Azure'],
     },
     {
       title: 'Architecture & UX',
       items: ['Front-End Architecture', 'Reusable Components', 'Component Design', 'Design Systems', 'Workflow Systems', 'Performance Optimization', 'Accessibility'],
     },
     {
-      title: 'Backend & Integration',
-      items: ['Node.js', 'Express.js', 'Python', 'FastAPI', 'REST API Integration', 'GraphQL', 'PostgreSQL', 'SQLAlchemy', 'Prisma', 'Auth.js', 'FHIR', 'EHR Integration', 'Healthcare Data Processing', 'Data Privacy', 'Application Security', 'ethers.js', 'Blockchain Application Development'],
+      title: 'Delivery',
+      items: ['CI/CD', 'App Store', 'Google Play'],
+    },
+    {
+      title: 'Collaboration',
+      items: ['Linear', 'GitHub', 'Slack', 'Notion'],
+    },
+    {
+      title: 'Healthcare & Security',
+      items: ['FHIR', 'EHR Integration', 'Healthcare Data Processing', 'Data Privacy', 'Application Security'],
+    },
+    {
+      title: 'Additional',
+      items: ['ethers.js', 'Blockchain Application Development', 'Theta Subchain Integration'],
     },
   ],
   education: [
