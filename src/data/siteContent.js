@@ -3,10 +3,10 @@ const publicAsset = (fileName) => `${import.meta.env.BASE_URL}${fileName}`;
 export const siteContent = {
   hero: {
     name: 'Haiyang Zhang',
-    role: 'Senior Frontend Engineer',
+    role: 'Senior Full-Stack Engineer',
     tagline: 'Building elegant product experiences across enterprise platforms, healthcare apps, and modern full-stack web systems.',
     blurb:
-      'Senior frontend engineer with 8 years of experience shipping React, TypeScript, React Native, and cloud-deployed applications with strong depth in front-end architecture, API integration, performance optimization, and product-minded execution.',
+      'Senior full-stack engineer with 8 years of experience shipping React, TypeScript, React Native, and cloud-deployed applications with strong depth in front-end architecture, API integration, performance optimization, and product-minded execution.',
     avatar: { src: publicAsset('avatar.jpg'), alt: 'Haiyang Zhang portrait' },
     primaryCta: { label: 'Download Resume', href: publicAsset('resume.pdf') },
     secondaryCta: {
@@ -16,7 +16,7 @@ export const siteContent = {
   },
   identitySignals: [
     '8 Years',
-    'Senior Frontend Engineer',
+    'Senior Full-Stack Engineer',
     'React / TypeScript',
     'Healthcare + FHIR',
     'Next.js / FastAPI',
@@ -25,7 +25,7 @@ export const siteContent = {
     'Cloud Deployment',
   ],
   summaryParagraphs: [
-    'Senior Frontend Engineer with 8 years of experience building React, TypeScript, and React Native applications for enterprise platforms, healthcare products, and cloud-deployed full-stack web systems.',
+    'Senior Full-Stack Engineer with 8 years of experience building React, TypeScript, and React Native applications for enterprise platforms, healthcare products, and cloud-deployed full-stack web systems.',
     'Strong in front-end architecture, reusable component systems, API integration, performance optimization, testing strategy, and hands-on backend development with Python, FastAPI, PostgreSQL, authentication flows, and Google Cloud-based deployment.',
   ],
   summaryHighlights: [
@@ -36,27 +36,11 @@ export const siteContent = {
   ],
   experienceChapters: [
     {
-      subtitle: 'Novo Vivo · Frontend Engineer / Software Engineer',
-      title: 'Privacy Computing Platform Modernization',
-      period: '2018 - Present',
-      summary:
-        'Led front-end development for a large-scale privacy computing platform spanning model management, inference testing, workflow orchestration, access control, service monitoring, and operational dashboards across multiple interconnected subsystems.',
-      highlights: [
-        'Evolved an early project-based implementation into a standardized platform by abstracting shared capabilities across data resources, federated modeling, privacy-preserving query, approval workflows, and system management',
-        'Built interfaces for model listing, inference configuration, execution history, task orchestration, and result inspection, improving workflow usability and reducing manual steps for enterprise users',
-        'Partnered with backend and algorithm teams on REST and GraphQL API contracts plus asynchronous task flows for model deployment, runtime tracking, and result delivery',
-        'Reduced duplicated front-end implementation by an estimated 30% to 40% through shared business components and design-system standards',
-        'Improved workflow-canvas responsiveness and first-screen rendering by an estimated 30%+ while strengthening regression confidence with Cypress and Playwright',
-        'Mentored up to 4 engineers while improving CI/CD release confidence for complex operational workflows',
-      ],
-      stack: ['Vue.js', 'Workflow Systems', 'REST API', 'GraphQL', 'Cypress', 'Playwright'],
-    },
-    {
-      subtitle: 'Lavita Health App · Cross-Platform Product Engineering',
+      subtitle: 'Lavita · Senior Full-Stack Engineer',
       title: 'Lavita Health App',
-      period: '2023 - Present',
+      period: 'Jan 2023 - Present',
       summary:
-        'Built a privacy-focused cross-platform healthcare app with Expo and React Native, supporting AI-driven health guidance, EHR ingestion, FHIR transformation, and secure downstream integrations.',
+        'Built a privacy-focused cross-platform healthcare app with 100,000+ downloads across iOS and Android, delivering AI-driven health guidance based on user medical data.',
       highlights: [
         'Supported 100,000+ downloads across iOS and Android',
         'Implemented FHIR-based transformation and normalization logic for imported medical records from major EHR systems including Epic and Cerner',
@@ -66,6 +50,22 @@ export const siteContent = {
         'Integrated Google NotebookLM content workflows and Web3 token flows on Theta subchain including registration, balance retrieval, and transfer',
       ],
       stack: ['React Native', 'Expo', 'FHIR', 'EHR Integration', 'Jest', 'Web3'],
+    },
+    {
+      subtitle: 'Novo Vivo · Software Engineer',
+      title: 'Privacy Computing Platform Modernization',
+      period: 'Aug 2018 - Jan 2023',
+      summary:
+        'Built complex enterprise platform products focused on privacy computing, workflow orchestration, and front-end architecture across multiple interconnected subsystems.',
+      highlights: [
+        'Evolved an early project-based implementation into a standardized platform by abstracting shared capabilities across data resources, federated modeling, privacy-preserving query, approval workflows, and system management',
+        'Built interfaces for model listing, inference configuration, execution history, task orchestration, and result inspection, improving workflow usability and reducing manual steps for enterprise users',
+        'Partnered with backend and algorithm teams on REST and GraphQL API contracts plus asynchronous task flows for model deployment, runtime tracking, and result delivery',
+        'Reduced duplicated front-end implementation by an estimated 30% to 40% through shared business components and design-system standards',
+        'Improved workflow-canvas responsiveness and first-screen rendering by an estimated 30%+ while strengthening regression confidence with Cypress and Playwright',
+        'Mentored up to 4 engineers while improving CI/CD release confidence for complex operational workflows',
+      ],
+      stack: ['Vue.js', 'Workflow Systems', 'REST API', 'GraphQL', 'Cypress', 'Playwright'],
     },
     {
       subtitle: 'Personal Project · Creator / Full-Stack Engineer',
