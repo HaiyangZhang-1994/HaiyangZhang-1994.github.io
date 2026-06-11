@@ -32,14 +32,15 @@ test('renders hero identity and signal strip', () => {
     'src',
     '/avatar.jpg',
   );
-  expect(screen.getByText(/building healthcare, workflow, and product systems/i)).toBeInTheDocument();
+  expect(screen.getByText(/frontend-first engineer building healthcare, workflow, and product systems/i)).toBeInTheDocument();
   expect(screen.getByText(/^8$/i)).toBeInTheDocument();
   expect(screen.getAllByText(/years/i).length).toBeGreaterThan(0);
   expect(screen.getAllByText(/100,000\+/i).length).toBeGreaterThan(0);
   expect(screen.getAllByText(/\$5\.9m/i).length).toBeGreaterThan(0);
-  expect(screen.getByText(/react, react native, vue, typescript, python/i)).toBeInTheDocument();
+  expect(screen.getByText(/react, react native, typescript, next\.js, fastapi, postgresql/i)).toBeInTheDocument();
   expect(screen.getByText(/healthcare products/i)).toBeInTheDocument();
   expect(screen.getByText(/workflow platforms/i)).toBeInTheDocument();
+  expect(screen.getByText(/react interfaces/i)).toBeInTheDocument();
   expect(screen.queryByRole('link', { name: /download resume/i })).not.toBeInTheDocument();
 });
 

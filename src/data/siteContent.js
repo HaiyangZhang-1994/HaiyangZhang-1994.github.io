@@ -5,18 +5,18 @@ export const siteContent = {
     name: 'Haiyang Zhang',
     role: 'Senior Frontend / Full-Stack Engineer',
     tagline:
-      'Building healthcare, workflow, and product systems with strong frontend ownership and full-stack delivery depth.',
+      'Frontend-first engineer building healthcare, workflow, and product systems with deep React and React Native experience plus full-stack delivery depth.',
     stats: [
       { value: '8', label: 'Years' },
       { value: '100,000+', label: 'Downloads' },
       { value: '$5.9M', label: 'Platform Value' },
     ],
     stackLine:
-      'React, React Native, Vue, TypeScript, Python, Next.js, FastAPI, PostgreSQL',
+      'React, React Native, TypeScript, Next.js, FastAPI, PostgreSQL',
     focusAreas: [
       'Healthcare Products',
       'Workflow Platforms',
-      'Frontend Systems',
+      'React Interfaces',
     ],
     avatar: { src: publicAsset('avatar.jpg'), alt: 'Haiyang Zhang portrait' },
     primaryCta: { label: 'Download Resume', href: publicAsset('resume.pdf') },
@@ -27,7 +27,7 @@ export const siteContent = {
   },
   summaryParagraphs: [
     'Over 8 years, I have grown from hands-on full-stack delivery into senior ownership across healthcare apps, enterprise workflow systems, and platform architecture work.',
-    'My strongest edge is combining frontend system thinking with real product delivery across mobile, backend APIs, data-heavy workflows, and cross-team execution.',
+    'My strongest edge is combining React-heavy product delivery with frontend system thinking across mobile apps, backend APIs, data-heavy workflows, and cross-team execution.',
   ],
   summaryHighlights: [
     'Owned core product surfaces for a healthcare app supporting 100,000+ downloads across iOS and Android.',
@@ -55,14 +55,14 @@ export const siteContent = {
       title: 'Workflow Automation Platform Core Delivery',
       period: 'Jan 2023 - Feb 2025',
       summary:
-        'Designed and developed major frontend modules within a Vue.js and Nuxt.js B2B workflow automation platform spanning 8 interconnected subsystems, with direct ownership of compute node management and data collaboration management.',
+        'Designed and developed major frontend modules within a $5.9M B2B workflow automation platform spanning 8 interconnected subsystems, with direct ownership of compute node management and data collaboration management.',
       highlights: [
         'Delivered 107 implementation-complete items across 123 scoped requirements, including 53 compute-node items and 54 data-collaboration items',
         'Built Compute Node Management workflows across 61 scoped requirements, covering node connectivity, resource and container monitoring, data sources, preprocessing, permissions, and logs',
         'Built the workflow orchestration layer within Data Collaboration Management across 7 workflow modules and 30 completed workflow requirements',
         'Expanded Cypress and Playwright coverage across 20+ critical workflow, node, data-source, and permission paths, reducing manual regression testing time by 40%',
       ],
-      stack: ['Vue.js', 'Nuxt.js', 'Workflow Automation', 'GraphQL', 'Cypress', 'Playwright'],
+      stack: ['Frontend Architecture', 'Workflow Automation', 'GraphQL', 'Cypress', 'Playwright', 'Platform Delivery'],
     },
     {
       subtitle: 'Lavita | Senior Full-Stack Engineer',
@@ -76,7 +76,7 @@ export const siteContent = {
         'Reduced duplicated implementation by 30% to 40%, conservatively saving 0.8 to 1.5 frontend engineer-years and $100K to $180K in annual delivery effort',
         'Raised frontend engineering standards for a 4-person frontend group within a 30-person delivery team through technical proposals, onboarding, and code reviews',
       ],
-      stack: ['Modular Frontend Architecture', 'RBAC', 'Workflow Canvas', 'Vue.js', 'Webpack', 'Vite'],
+      stack: ['Modular Frontend Architecture', 'RBAC', 'Workflow Canvas', 'Platform Refactor', 'Webpack', 'Vite'],
     },
   ],
   skillGroups: [
