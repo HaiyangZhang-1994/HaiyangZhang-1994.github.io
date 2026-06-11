@@ -33,7 +33,7 @@ export const siteContent = {
     'Owned core product surfaces for a healthcare app supporting 100,000+ downloads across iOS and Android.',
     'Delivered key workflow systems within a $5.9M enterprise platform across 123 scoped requirements and 107 implementation-complete items.',
     'Improved engineering efficiency with 30% to 40% less duplicated implementation and 30%+ workflow-canvas performance gains.',
-    'Led healthcare data ingestion with FHIR transformations that reduced EHR payload size by 70%.',
+    'Raised frontend engineering standards across a 4-person frontend group within a 30-person delivery team through technical proposals, onboarding, and code reviews.',
   ],
   experienceChapters: [
     {

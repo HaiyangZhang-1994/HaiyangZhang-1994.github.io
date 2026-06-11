@@ -49,7 +49,7 @@ test('renders experience, skills, and contact content', () => {
   expect(screen.getByText(/healthcare ai app foundations/i)).toBeInTheDocument();
   expect(screen.getByText(/workflow automation platform refactor leadership/i)).toBeInTheDocument();
   expect(screen.getByText(/\$5\.9m enterprise platform across 123 scoped requirements and 107 implementation-complete items/i)).toBeInTheDocument();
-  expect(screen.getByText(/reduced ehr payload size by 70%/i)).toBeInTheDocument();
+  expect(screen.getByText(/raised frontend engineering standards across a 4-person frontend group/i)).toBeInTheDocument();
   expect(screen.getByText(/backend and apis/i)).toBeInTheDocument();
   expect(screen.getAllByText(/python/i).length).toBeGreaterThan(0);
   expect(screen.getByText(/tailwind css/i)).toBeInTheDocument();
