@@ -5,9 +5,19 @@ export const siteContent = {
     name: 'Haiyang Zhang',
     role: 'Senior Frontend / Full-Stack Engineer',
     tagline:
-      'Frontend-led product builder for healthcare apps, workflow automation platforms, and modern full-stack systems.',
-    blurb:
-      'Senior Frontend / Full-Stack Engineer with 8 years of experience spanning startup foundations, a 100,000+ download healthcare app, and a $5.9M enterprise workflow platform with deep ownership across architecture, delivery, and performance.',
+      'Building healthcare, workflow, and product systems with strong frontend ownership and full-stack delivery depth.',
+    stats: [
+      { value: '8', label: 'Years' },
+      { value: '100,000+', label: 'Downloads' },
+      { value: '$5.9M', label: 'Platform Value' },
+    ],
+    stackLine:
+      'React, React Native, Vue, TypeScript, Python, Next.js, FastAPI, PostgreSQL',
+    focusAreas: [
+      'Healthcare Products',
+      'Workflow Platforms',
+      'Frontend Systems',
+    ],
     avatar: { src: publicAsset('avatar.jpg'), alt: 'Haiyang Zhang portrait' },
     primaryCta: { label: 'Download Resume', href: publicAsset('resume.pdf') },
     secondaryCta: {
@@ -15,31 +25,21 @@ export const siteContent = {
       href: 'https://www.linkedin.com/in/haiyang-zhang-122687135/',
     },
   },
-  identitySignals: [
-    '8 Years',
-    'Senior Frontend / Full-Stack',
-    'Early Engineering Hire',
-    '100,000+ App Downloads',
-    '$5.9M Enterprise Platform',
-    '8 Interconnected Subsystems',
-    'React / React Native / Vue',
-    'Healthcare + Workflow Automation',
-  ],
   summaryParagraphs: [
-    'Senior Frontend / Full-Stack Engineer with 8 years of experience building production web, mobile, healthcare, backend API, and B2B workflow automation platforms.',
-    'Early engineering hire at Novo Vivo, contributing from startup-stage product foundations to scaled delivery across a 100,000+ download healthcare app and a $5.9M enterprise workflow platform.',
+    'Over 8 years, I have grown from hands-on full-stack delivery into senior ownership across healthcare apps, enterprise workflow systems, and platform architecture work.',
+    'My strongest edge is combining frontend system thinking with real product delivery across mobile, backend APIs, data-heavy workflows, and cross-team execution.',
   ],
   summaryHighlights: [
-    'Owned frontend delivery across 2 core enterprise subsystems with 123 scoped requirements and 107 implementation-complete items',
-    'Improved engineering efficiency with 30% to 40% less duplicated implementation and 30%+ workflow-canvas performance gains',
-    'Reduced manual regression testing by 40% and release-blocking regressions by 35% through stronger automated coverage',
-    'Led healthcare data ingestion with FHIR transformations that cut EHR payload size by 70%',
+    'Owned core product surfaces for a healthcare app supporting 100,000+ downloads across iOS and Android.',
+    'Delivered key workflow systems within a $5.9M enterprise platform across 123 scoped requirements and 107 implementation-complete items.',
+    'Improved engineering efficiency with 30% to 40% less duplicated implementation and 30%+ workflow-canvas performance gains.',
+    'Led healthcare data ingestion with FHIR transformations that reduced EHR payload size by 70%.',
   ],
   experienceChapters: [
     {
-      subtitle: 'Novo Vivo | Senior Frontend / Full-Stack Engineer and Early Engineering Hire',
-      title: 'Healthcare Mobile App Platform',
-      period: 'Sep 2018 - Present',
+      subtitle: 'Lavita | Full-Stack Engineer',
+      title: 'Healthcare AI App Foundations',
+      period: 'Sep 2018 - Dec 2022',
       summary:
         'Owned core mobile product surfaces for a React Native and Expo healthcare app with 100,000+ downloads, shipping onboarding, health-data upload, AI chat, and account flows across iOS and Android.',
       highlights: [
@@ -51,9 +51,9 @@ export const siteContent = {
       stack: ['React Native', 'Expo', 'Express.js', 'FastAPI', 'PostgreSQL', 'FHIR'],
     },
     {
-      subtitle: 'Novo Vivo | Frontend Engineer and Workflow Platform Developer',
-      title: 'Workflow Automation Platform - $5.9M 8-Subsystem Enterprise Platform',
-      period: '2018 - Present',
+      subtitle: 'Lavita | Senior Full-Stack Engineer',
+      title: 'Workflow Automation Platform Core Delivery',
+      period: 'Jan 2023 - Feb 2025',
       summary:
         'Designed and developed major frontend modules within a Vue.js and Nuxt.js B2B workflow automation platform spanning 8 interconnected subsystems, with direct ownership of compute node management and data collaboration management.',
       highlights: [
@@ -65,9 +65,9 @@ export const siteContent = {
       stack: ['Vue.js', 'Nuxt.js', 'Workflow Automation', 'GraphQL', 'Cypress', 'Playwright'],
     },
     {
-      subtitle: 'Novo Vivo | Senior Frontend and Platform Architecture Ownership',
-      title: 'Workflow Automation Platform Refactor',
-      period: '2018 - Present',
+      subtitle: 'Lavita | Senior Full-Stack Engineer',
+      title: 'Workflow Automation Platform Refactor Leadership',
+      period: 'Mar 2025 - Present',
       summary:
         'Led the refactor of 2 subsystem families within the broader workflow platform, converting repeated delivery patterns into a reusable foundation for customer-specific implementations.',
       highlights: [

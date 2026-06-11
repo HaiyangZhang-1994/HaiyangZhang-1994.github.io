@@ -15,6 +15,8 @@ test('renders the experience heading', () => {
 test('renders summary, deep skills, and education sections', () => {
   render(<App />);
   expect(screen.getByText(/^summary$/i)).toBeInTheDocument();
+  expect(screen.getByText(/what i bring/i)).toBeInTheDocument();
+  expect(screen.getByText(/selected proof/i)).toBeInTheDocument();
   expect(screen.getByText(/technical stack/i)).toBeInTheDocument();
   expect(screen.getByText(/education/i)).toBeInTheDocument();
   expect(screen.getByText(/real-time and data integration/i)).toBeInTheDocument();
@@ -30,15 +32,23 @@ test('renders hero identity and signal strip', () => {
     'src',
     '/avatar.jpg',
   );
-  expect(screen.getAllByText(/react/i).length).toBeGreaterThan(0);
-  expect(screen.getByText(/\$5\.9m enterprise platform/i)).toBeInTheDocument();
-  expect(screen.getByText(/healthcare \+ workflow automation/i)).toBeInTheDocument();
+  expect(screen.getByText(/building healthcare, workflow, and product systems/i)).toBeInTheDocument();
+  expect(screen.getByText(/^8$/i)).toBeInTheDocument();
+  expect(screen.getAllByText(/years/i).length).toBeGreaterThan(0);
+  expect(screen.getAllByText(/100,000\+/i).length).toBeGreaterThan(0);
+  expect(screen.getAllByText(/\$5\.9m/i).length).toBeGreaterThan(0);
+  expect(screen.getByText(/react, react native, vue, typescript, python/i)).toBeInTheDocument();
+  expect(screen.getByText(/healthcare products/i)).toBeInTheDocument();
+  expect(screen.getByText(/workflow platforms/i)).toBeInTheDocument();
   expect(screen.queryByRole('link', { name: /download resume/i })).not.toBeInTheDocument();
 });
 
 test('renders experience, skills, and contact content', () => {
   render(<App />);
-  expect(screen.getByText(/healthcare mobile app platform/i)).toBeInTheDocument();
+  expect(screen.getByText(/healthcare ai app foundations/i)).toBeInTheDocument();
+  expect(screen.getByText(/workflow automation platform refactor leadership/i)).toBeInTheDocument();
+  expect(screen.getByText(/\$5\.9m enterprise platform across 123 scoped requirements and 107 implementation-complete items/i)).toBeInTheDocument();
+  expect(screen.getByText(/reduced ehr payload size by 70%/i)).toBeInTheDocument();
   expect(screen.getByText(/backend and apis/i)).toBeInTheDocument();
   expect(screen.getAllByText(/python/i).length).toBeGreaterThan(0);
   expect(screen.getByText(/tailwind css/i)).toBeInTheDocument();

@@ -1,7 +1,6 @@
 import { motion } from 'motion/react';
 import { siteContent } from '../data/siteContent';
 import { Reveal } from '../components/Reveal';
-import { SignalPill } from '../components/SignalPill';
 import { BackgroundCanvas } from '../components/BackgroundCanvas';
 import styles from './HeroSection.module.css';
 
@@ -33,28 +32,37 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.24 }}
-            className={styles.blurb}
+            className={styles.tagline}
           >
             {hero.tagline}
           </motion.p>
-          <motion.p
+          <motion.div
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className={styles.detail}
+            className={styles.statsGrid}
           >
-            {hero.blurb}
-          </motion.p>
-          <ul className={styles.signals} aria-label="Professional signals">
-            {siteContent.identitySignals.map((signal, index) => (
+            {hero.stats.map((item) => (
+              <div key={item.label} className={styles.statCard}>
+                <span className={styles.statValue}>{item.value}</span>
+                <span className={styles.statLabel}>{item.label}</span>
+              </div>
+            ))}
+          </motion.div>
+          <Reveal className={styles.stackRail} direction="up" delay={0.34}>
+            <span className={styles.stackLabel}>Core Stack</span>
+            <p className={styles.stackText}>{hero.stackLine}</p>
+          </Reveal>
+          <ul className={styles.focusList} aria-label="Primary focus areas">
+            {hero.focusAreas.map((signal, index) => (
               <Reveal
                 as="li"
                 key={signal}
-                className={styles.signalItem}
+                className={styles.focusItem}
                 direction={index % 2 === 0 ? 'right' : 'left'}
-                delay={0.28 + index * 0.04}
+                delay={0.38 + index * 0.04}
               >
-                <SignalPill label={signal} />
+                <span className={styles.focusPill}>{signal}</span>
               </Reveal>
             ))}
           </ul>

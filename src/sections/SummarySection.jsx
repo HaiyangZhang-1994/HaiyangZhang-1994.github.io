@@ -8,6 +8,7 @@ export function SummarySection() {
     <SectionFrame eyebrow="Snapshot" title="Summary" id="summary">
       <div className={styles.grid}>
         <Reveal className={`${styles.panel} glass-surface`} direction="right">
+          <h3 className={styles.subheading}>What I Bring</h3>
           {siteContent.summaryParagraphs.map((paragraph) => (
             <p key={paragraph} className={styles.paragraph}>
               {paragraph}
@@ -15,7 +16,7 @@ export function SummarySection() {
           ))}
         </Reveal>
         <Reveal className={`${styles.panel} glass-surface`} direction="left" delay={0.08}>
-          <h3 className={styles.subheading}>Core Strengths</h3>
+          <h3 className={styles.subheading}>Selected Proof</h3>
           <ul className={styles.list}>
             {siteContent.summaryHighlights.map((item) => (
               <li key={item}>{item}</li>
