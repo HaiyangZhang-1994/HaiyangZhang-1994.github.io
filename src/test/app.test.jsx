@@ -49,7 +49,10 @@ test('renders experience, skills, and contact content', () => {
   expect(screen.getByText(/healthcare mobile app platform/i)).toBeInTheDocument();
   expect(screen.getByText(/workflow platform refactor/i)).toBeInTheDocument();
   expect(screen.getByText(/\$5\.9m enterprise platform across 123 scoped requirements and 107 implementation-complete items/i)).toBeInTheDocument();
-  expect(screen.getByText(/raised frontend engineering standards across a 4-person frontend group/i)).toBeInTheDocument();
+  expect(screen.getByText(/delivered 107 implementation-complete items, including 53 compute-node items/i)).toBeInTheDocument();
+  expect(screen.getByText(/converting patterns from 107 feature requirements/i)).toBeInTheDocument();
+  expect(screen.getByText(/saving 3 frontend engineer-years in annual delivery effort/i)).toBeInTheDocument();
+  expect(screen.getByText(/raised frontend engineering standards across a 6-person frontend group/i)).toBeInTheDocument();
   expect(screen.getByText(/backend and apis/i)).toBeInTheDocument();
   expect(screen.getByText(/ai and llm applications/i)).toBeInTheDocument();
   expect(screen.getAllByText(/retrieval-augmented generation \(rag\)/i).length).toBeGreaterThan(0);

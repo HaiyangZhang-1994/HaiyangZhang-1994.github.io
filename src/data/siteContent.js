@@ -33,7 +33,7 @@ export const siteContent = {
     'Owned React Native product surfaces and AI chat experiences for a healthcare app supporting 100,000+ downloads across iOS and Android.',
     'Delivered key workflow systems within a $5.9M enterprise platform across 123 scoped requirements and 107 implementation-complete items.',
     'Built production RAG, hybrid retrieval, streaming response, output validation, and bounded retry workflows for an AI health assistant.',
-    'Raised frontend engineering standards across a 4-person frontend group within a 30-person delivery team while reducing duplicated implementation by 30% to 40%.',
+    'Raised frontend engineering standards across a 6-person frontend group within a 50-person delivery team while reducing duplicated implementation by 30% to 40%.',
   ],
   experienceChapters: [
     {
@@ -59,7 +59,7 @@ export const siteContent = {
       summary:
         'Designed and developed major frontend modules within a $5.9M B2B workflow automation platform spanning 8 interconnected subsystems, with direct ownership of compute node management and data collaboration management.',
       highlights: [
-        'Delivered 107 implementation-complete items across 123 scoped requirements, including 53 compute-node items and 54 data-collaboration items',
+        'Delivered 107 implementation-complete items, including 53 compute-node items and 54 data-collaboration items',
         'Built Compute Node Management workflows across 61 scoped requirements, covering node connectivity, resource and container monitoring, data sources, preprocessing, permissions, and logs',
         'Built the workflow orchestration layer within Data Collaboration Management across 7 workflow modules and 30 completed workflow requirements',
         'Expanded Cypress and Playwright coverage across 20+ critical workflow, node, data-source, and permission paths, reducing manual regression testing time by 40%',
@@ -71,12 +71,12 @@ export const siteContent = {
       title: 'Workflow Platform Refactor — Standardized Delivery Foundation',
       period: 'Lavita AI · Sep 2018 - Present',
       summary:
-        'Led the refactor of 2 subsystem families within the broader workflow platform, converting repeated delivery patterns into a reusable foundation for customer-specific implementations.',
+        'Led the refactor of 2 subsystem families within the broader 8-subsystem workflow platform, converting patterns from 107 feature requirements into a reusable foundation for customer-specific delivery.',
       highlights: [
         'Abstracted 10+ repeated product patterns into shared platform modules for RBAC, table and search flows, approval workflows, audit logs, monitoring dashboards, workflow tasks, and canvas interactions',
         'Standardized 6 reusable workflow templates across project management, task management, data-source selection, execution tracking, and result publishing',
-        'Reduced duplicated implementation by 30% to 40%, conservatively saving 0.8 to 1.5 frontend engineer-years and $100K to $180K in annual delivery effort',
-        'Raised frontend engineering standards for a 4-person frontend group within a 30-person delivery team through technical proposals, onboarding, and code reviews',
+        'Reduced duplicated implementation by 30% to 40%, conservatively saving 3 frontend engineer-years in annual delivery effort',
+        'Raised frontend engineering standards for a 6-person frontend group within a 50-person delivery team through technical proposals, onboarding, and code reviews',
       ],
       stack: ['Modular Frontend Architecture', 'RBAC', 'Workflow Canvas', 'Platform Refactor', 'Webpack', 'Vite'],
     },
