@@ -5,18 +5,18 @@ export const siteContent = {
     name: 'Haiyang Zhang',
     role: 'Senior Frontend / Full-Stack Engineer',
     tagline:
-      'Frontend-first engineer building healthcare, workflow, and product systems with deep React and React Native experience plus full-stack delivery depth.',
+      'Frontend-first engineer building React and React Native products across AI-powered healthcare, enterprise workflow platforms, and full-stack systems.',
     stats: [
       { value: '8', label: 'Years' },
       { value: '100,000+', label: 'Downloads' },
       { value: '$5.9M', label: 'Platform Value' },
     ],
     stackLine:
-      'React, React Native, TypeScript, Next.js, FastAPI, PostgreSQL',
+      'React, React Native, TypeScript, Next.js, Node.js, FastAPI, PostgreSQL',
     focusAreas: [
-      'Healthcare Products',
+      'React Product Engineering',
+      'AI-Powered Healthcare',
       'Workflow Platforms',
-      'React Interfaces',
     ],
     avatar: { src: publicAsset('avatar.jpg'), alt: 'Haiyang Zhang portrait' },
     primaryCta: { label: 'Download Resume', href: publicAsset('resume.pdf') },
@@ -26,34 +26,36 @@ export const siteContent = {
     },
   },
   summaryParagraphs: [
-    'Over 8 years, I have grown from hands-on full-stack delivery into senior ownership across healthcare apps, enterprise workflow systems, and platform architecture work.',
-    'My strongest edge is combining React-heavy product delivery with frontend system thinking across mobile apps, backend APIs, data-heavy workflows, and cross-team execution.',
+    'As an early engineering hire at Lavita AI, I have grown over 8 years from hands-on product delivery into senior frontend and full-stack ownership across mobile, AI, backend API, and enterprise platform work.',
+    'My strongest edge is combining React and React Native product engineering with frontend system thinking, production AI workflows, data-heavy orchestration, and cross-team technical leadership.',
   ],
   summaryHighlights: [
-    'Owned core product surfaces for a healthcare app supporting 100,000+ downloads across iOS and Android.',
+    'Owned React Native product surfaces and AI chat experiences for a healthcare app supporting 100,000+ downloads across iOS and Android.',
     'Delivered key workflow systems within a $5.9M enterprise platform across 123 scoped requirements and 107 implementation-complete items.',
-    'Improved engineering efficiency with 30% to 40% less duplicated implementation and 30%+ workflow-canvas performance gains.',
-    'Raised frontend engineering standards across a 4-person frontend group within a 30-person delivery team through technical proposals, onboarding, and code reviews.',
+    'Built production RAG, hybrid retrieval, streaming response, output validation, and bounded retry workflows for an AI health assistant.',
+    'Raised frontend engineering standards across a 4-person frontend group within a 30-person delivery team while reducing duplicated implementation by 30% to 40%.',
   ],
   experienceChapters: [
     {
-      subtitle: 'Lavita | Full-Stack Engineer',
-      title: 'Healthcare AI App Foundations',
-      period: 'Sep 2018 - Dec 2022',
+      subtitle: 'Mobile, Backend API, and AI Product Delivery',
+      title: 'Healthcare Mobile App Platform — AI Chat, RAG, and Health Data',
+      period: 'Lavita AI · Sep 2018 - Present',
       summary:
         'Owned core mobile product surfaces for a React Native and Expo healthcare app with 100,000+ downloads, shipping onboarding, health-data upload, AI chat, and account flows across iOS and Android.',
       highlights: [
-        'Built Express.js middleware for Lavita AI and Python/FastAPI REST APIs connected to PostgreSQL-backed data workflows, supporting 15+ backend and API endpoints',
-        'Designed Server-Sent Events (SSE) AI chat interactions that reduced perceived response latency by 40% through streaming message rendering and smoother loading states',
+        'Built Express.js middleware and Python/FastAPI REST APIs backed by PostgreSQL, supporting 15+ endpoints across AI chat, RAG retrieval, health-data processing, file processing, reporting, and account workflows',
+        'Built a Retrieval-Augmented Generation (RAG) pipeline combining semantic search and keyword retrieval with reranking for relevant healthcare knowledge',
+        'Designed Server-Sent Events (SSE) streaming for AI chat, reducing perceived response latency by 40% through incremental rendering and smoother real-time UI updates',
+        'Implemented AI output validation and bounded retry workflows that automatically re-ran failed generations with quality feedback',
         'Led Electronic Health Record (EHR) ingestion workflows across Epic, Cerner, and other systems, including FHIR transformation that reduced medical-record payload size by 70%',
-        'Expanded Jest coverage to 65%+ across 80+ utility, API, and UI-state functions and 12 critical health-data flows',
+        'Expanded Jest coverage to 65%+ across 80+ utility, API, and UI-state functions and 12 critical health-data flows, reducing release-blocking regressions by 35%',
       ],
-      stack: ['React Native', 'Expo', 'Express.js', 'FastAPI', 'PostgreSQL', 'FHIR'],
+      stack: ['React Native', 'Expo', 'RAG', 'Express.js', 'FastAPI', 'PostgreSQL', 'SSE', 'FHIR'],
     },
     {
-      subtitle: 'Lavita | Senior Full-Stack Engineer',
-      title: 'Workflow Automation Platform Core Delivery',
-      period: 'Jan 2023 - Feb 2025',
+      subtitle: 'Frontend Engineering and Workflow Platform Development',
+      title: 'Workflow Automation Platform — $5.9M Enterprise Delivery',
+      period: 'Lavita AI · Sep 2018 - Present',
       summary:
         'Designed and developed major frontend modules within a $5.9M B2B workflow automation platform spanning 8 interconnected subsystems, with direct ownership of compute node management and data collaboration management.',
       highlights: [
@@ -65,9 +67,9 @@ export const siteContent = {
       stack: ['Frontend Architecture', 'Workflow Automation', 'GraphQL', 'Cypress', 'Playwright', 'Platform Delivery'],
     },
     {
-      subtitle: 'Lavita | Senior Full-Stack Engineer',
-      title: 'Workflow Automation Platform Refactor Leadership',
-      period: 'Mar 2025 - Present',
+      subtitle: 'Senior Frontend and Platform Architecture Ownership',
+      title: 'Workflow Platform Refactor — Standardized Delivery Foundation',
+      period: 'Lavita AI · Sep 2018 - Present',
       summary:
         'Led the refactor of 2 subsystem families within the broader workflow platform, converting repeated delivery patterns into a reusable foundation for customer-specific implementations.',
       highlights: [
@@ -91,6 +93,10 @@ export const siteContent = {
     {
       title: 'Backend and APIs',
       items: ['Node.js', 'Express.js', 'FastAPI', 'REST APIs', 'RESTful APIs', 'GraphQL', 'PostgreSQL', 'Middleware Development', 'Database-Backed API Development'],
+    },
+    {
+      title: 'AI and LLM Applications',
+      items: ['Retrieval-Augmented Generation (RAG)', 'Hybrid Retrieval', 'Semantic Search', 'Keyword Search', 'Reranking', 'LLM Context Assembly', 'AI Output Validation', 'Retry Policies'],
     },
     {
       title: 'Real-Time and Data Integration',

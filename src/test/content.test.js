@@ -9,7 +9,7 @@ describe('siteContent', () => {
     expect(siteContent.summaryParagraphs).toHaveLength(2);
     expect(siteContent.summaryHighlights).toHaveLength(4);
     expect(siteContent.experienceChapters).toHaveLength(3);
-    expect(siteContent.skillGroups).toHaveLength(9);
+    expect(siteContent.skillGroups).toHaveLength(10);
     expect(siteContent.education).toHaveLength(2);
     expect(siteContent.contact.resumeHref).toBe('/resume.pdf');
   });
